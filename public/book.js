@@ -74,6 +74,7 @@ function displayLastBook() {
 
 //Create a book with the button and push it to the library
 addBookButton.addEventListener('click', function (e) {
+  e.preventDefault()
   let form = e.target.parentElement
   let title = form.title.value
   let author = form.author.value
